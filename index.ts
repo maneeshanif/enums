@@ -32,11 +32,11 @@ enum Days {
 
     // ---------------------------------------------------------------------------------------------------------------------------------------
     /* Types Of Enums :
-    There are three types of enums in TypeScript:
+    There are two types of enums in TypeScript:
     1. Numeric Enums
     2. String Enums
-    3. Heterogeneous Enums
     */
+
    // 1. Numeric Enums :
 //                    Numeric enums in TypeScript allow you to define a set of named constants with numeric values.
    enum NumericEnum {
@@ -70,26 +70,6 @@ enum Status {
     Rejected = "REJECTED"
 }
 console.log(Status);
-
-
-    // -----------------------------------------------------------------------------------------------------------------------------------------------
-    // 3. Heterogeneous Enums:
-    //                     Heterogeneous enums in TypeScript are a mix of both numeric and string members within the same enum. 
-    //  It’s like having a menu wheresome options are numbers and others are words
-    enum HeterogeneousEnum {
-        A = 1,
-        B = "apple",
-        // C = true     // this will give you error becoz enums are use for only number and strings
-        C = 7
-        }
-         console.log(HeterogeneousEnum.A);  // prints 1
-        // Example 2
-         enum Result {
-            Success = 'SUCCESS',
-            Failure = 0,
-        }
-        console.log(Result);
-        
 
 // --------------------------------------------------------------------------------------------------------------------------------------------
 // Conculation here i will make a simple program to show the real usecase of enums in programming world;
